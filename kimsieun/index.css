@@ -179,6 +179,7 @@ body {
     flex-direction: column;
     width: 120px;
     height: 100%;
+
 }
 
 .user__inform-name {
@@ -208,15 +209,13 @@ body {
     border-radius: 12px;
     margin: 12px 0;
     cursor: pointer;
-    padding: 12px;
-    border-radius: 20px 0 0 20px;
 }
 
 .below--bottom :hover {
     background: rgba(0, 0, 0, 0.01);
 }
 
-.description--comtainer {
+.description--container {
     padding: 12px;
     font-size: 16px;
     font-weight: 500;
