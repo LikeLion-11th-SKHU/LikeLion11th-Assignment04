@@ -221,6 +221,7 @@ body {
 
 .aside{
     display: flex;
+    width: 30%;
 }
 
 .recommend{
