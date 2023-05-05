@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://www.youtube.com/s/desktop/932eb6a8/img/favicon.ico">
+    <link rel="icon" href="https://www.youtube.com/s/desktop/932eb6a8/img/favicon_32x32.png" sizes="32x32">
+</head>
+<body>
+<div id="container">
+  <section class="header">
+    <!--header__start-->
+    <div class="header__start"><!--부모 요소-->
+      <div class="header__start--menu"><!--menu바, 요소의 배치나 크기 편하게하기 위해-->
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+      <a class="header__start--img" href="index.html">
+        <img src="static/img/YouTube-Logo.png">
+      </a>
+    </div>
+    <!--header__center-->
+    <div class="header__center">
+      <form id ="search-form">
+        <div class="search-form__display-flex">
+          <input type="text" id="search" placeholder="검색">
+        </div>
+      </form>
+      <button type="submit" class="header__search--button">
+        <span class="material-symbols-outlined">
+          search
+        </span>
+      </button>
+      <div class="keyboard-voice">
+        <span class="material-symbols-outlined">
+          keyboard_voice
+        </span>
+      </div>
+
+    </div>
+    <!--header__end-->
+    <div class="header__end">
+      <div class="header__end--menu"><!--부모요소-->
+        <!--요소1-->
+        <div class="header__end--setting-menu">
+          <span class="material-symbols-outlined">
+            more_vert
+            </span>
+        </div>
+        <!--요소2-->
+        <div class="header__end--user">
+          <span class="material-symbols-outlined" style="padding: 8px">
+            account_circle
+            </span>
+          <p>로그인</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    <div class="content__container">
+      <div class="content__video">
+        <video poster="static/img/thumbnail.png" controls>
+          <source src="static/video/likelion11th_skhu.mp4"></source>
+        </video>
+      </div>
+      <div class="content__below">
+        <h1 class="content__below--title">멋쟁이사자처럼 SKHU 11기 홍보 영상</h1>
+        <div class="below--top">
+          <a class="user__inform-profile" href="https://www.youtube.com/@likelion.official">
+            <img src="static/img/likelion-Logo.jpg">
+          </a>
+          <div class="user__inform-inform">
+            <a class="user__inform-name" href="https://www.youtube.com/@likelion.official">LikeLion</a>
+            <p class="user__inform-num">구독자 6.64천명</p>
+          </div>
+          <div class="user__sub">
+            <button type="button" class="user__sub-button">구독</button>
+          </div>
+        </div>
+      </div>
+        <div class="below--bottom">
+          <div class="description--container">
+            <div class="description--main">
+              <span>조회수 15만회</span>
+              <span>3주 전</span>
+            </div>
+            <div class="description--sub">
+              <p>
+                성공회대학교 멋쟁이사자처럼 11기 부원을 모집합니다!<br>
+                관심이 있으시다면 지원해보세요!
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!--이 부분은 과제입니다.-->
+    <div class="aside">
+      <hr>
+      <div class="box">
+        <div class="thumbnail">
+          <a class="pic" href="https://youtu.be/yXaILj2kYBo">
+          <img src="./static/img/Perkz.jpg">
+          </a>
+        </div>
+        <div class="all">
+          <div class="title">Perkz야...</div>
+          <div class="youtuber">Dplus KIA</div>
+          <div class="information">조회수 56만회 &middot; 6일 전</div>
+        </div>
+      </div>
+ 
+      <div class="box">
+        <div class="thumbnail">
+          <a class="pic" href="https://youtu.be/XtwgZhqYr8c">
+          <img src="./static/img/건부.jpg">
+          </a>
+        </div>
+        <div class="all">
+          <div class="title">이익? 쿵!</div>
+          <div class="youtuber">Dplus KIA</div>
+          <div class="information">조회수 8.6만회 &middot; 9일전</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="thumbnail">
+          <a class="pic" href="https://youtu.be/O4JhWYNxNdQ">
+          <img src="./static/img/Cozy_Jazz.jpg">
+          </a>
+        </div>
+        <div class="all">
+          <div class="title">[COZY JAZZ] 재즈발라드와 함께 차분히 혼자만의 시간 보내기</div>
+          <div class="youtuber">MONKEY BGM</div>
+          <div class="information">조회수 3.5만회 &middot; 2주 전</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="thumbnail">
+          <a class="pic" href="https://youtu.be/ngsapwsD9c8">
+          <img src="./static/img/Spring_Jazz.jpg">
+          </a>
+        </div>
+        <div class="all">
+          <div class="title">[SPRING JAZZ] 봄냄새 제대로 나는 재즈비지엠</div>
+          <div class="youtuber">MONKEY BGM</div>
+          <div class="information">조회수 4.9만회 &middot; 2주 전</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="thumbnail">
+          <a class="pic" href="https://youtu.be/Ozi_eEnSEIc">
+          <img src="./static/img/Morning_Jazz.jpg">
+          </a>
+        </div>
+        <div class="all">
+          <div class="title">[MORNING JAZZ] 따뜻한 재즈가 도착했습니다</div>
+          <div class="youtuber">MONKEY BGM</div>
+          <div class="information">조회수 3만회 &middot; 3주 전</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="thumbnail">
+          <a class="pic" href="https://youtu.be/ftC_PjG7h3Y">
+            <img src="./static/img/Night_Jazz.jpg">
+          </a>
+        </div>
+        <div class="all">
+          <div class="title">[NIGHT JAZZ] 당신의 지친 마음을 위로해주는 재즈발라드</div>
+          <div class="youtuber">MONKEY BGM</div>
+          <div class="information">조회수 9.1천회 &middot; 1일 전</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="thumbnail">
+          <a class="pic" href="https://youtu.be/4isSj9WcXUI">
+          <img src="./static/img/Sunshine_Jazz.jpg">
+          </a>
+        </div>
+        <div class="all">
+          <div class="title">[SUNSHINE JAZZ] 사랑하는 사람과 소풍가는 날</div>
+          <div class="youtuber">MONKEY BGM</div>
+          <div class="information">조회수 1만회 &middot; 1개월 전</div>
+        </div>
+      </div>
+  </div>
+  </section>
+</body>
+</html>
