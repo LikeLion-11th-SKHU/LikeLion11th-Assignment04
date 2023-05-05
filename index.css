@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 56px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*header*/
+.header__start{
+    display: flex;
+    gap: 10px; /*요소들이 떨어져있는 것을 표현, img는 인라인->width height로 설정*/
+    
+}
+.header__start--menu{
+    display: flex;
+    align-items: center; /*세로 정렬*/
+    justify-content: center; /*메뉴바가 가운데로 오게 만듦*/
+}
+.header__start--img img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;/*유튜브 로고를 부모요소에 맞춰서 들어감. 이미지 크기는 부모요소가 줄 수 있음. */
+}
+
+/*center*/
+#search-form{
+    width: 550px;
+    height: 40px;
+    border-top-left-radius: 20px; /*왼쪽 위를 둥글게 하겠다*/
+    border-bottom-left-radius: 20px;
+    border: 1px solid #ccc; /*선 만들어주기*/
+    box-sizing: border-box; /*이전에는 선이 박스에 포함x 선까지 박스 사이즈에 포함*/
+    /* 요소를 배치하거나 크기 바꿀때 부모요소를 사용하는 것이 좋다. */
+    /* div를 묶고 있는 form을 바꾸기 */
+    display: flex;
+    align-items: center;
+    border-right: none;/*선의 오른쪽을 지워라. 다른거랑 겹쳐서 2px됨.*/
+}
+
+/*검색창을 이동시킴*/
+.header__center {
+    width: 730px;
+    height: 100%;
+    display: flex; /*아래에 있던 아이콘이 올라옴. flex먹이면 가로로 배치하기 때문*/
+    align-items: center;
+    justify-content: center;
+}
+
+.search-form__display-flex{ /*input태그(검색하는 부분)를 움직이고싶음. 검색하는 게 맨위에 붙어있음.*/
+    display: flex;
+    padding: 0 20px;
+    width: 100%;
+    height: 24px;
+}
+
+#search{
+    width: 100%;
+    border: none; /*보더랑 아웃라인 없애기*/
+    outline: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 12pt; /*pt는 한글파일에서 주로 사용*/ 
+}
+/*돋보기 모양 설정*/
+.header__search--button{
+    background-color: #f8f8f8;
+    width: 64px;
+    height: 40px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor:pointer; /*커서 만들기. 클릭모양*/
+}
+.header__search--button:hover{ /*마우스 커서 올리면 뭔가를 바꾸게 해라.*/
+    background-color: gray;
+}
+/*마이크 모양 설정*/
+.keyboard-voice{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__end{
+    display: flex;
+    align-items: center;
+
+}
+.header__end--menu{
+    display: flex;
+    width: 142px;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center; /*items랑 content차이*/
+    gap: 20px;
+}
+/* 로그인 부분 건들이기 */
+.header__end--user{
+    display: flex;
+    width: 96px;
+    height: 40px;
+    border-radius: 20px; /*4가지 방향 다 둥글게*/
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #065fd4;
+    justify-content: center;
+    align-items: center;
+}
+/* 로그인부분 더 디테일하게 바꾸기 */
+.header__end--user p{
+    width: 48px;
+}
+
+/* 
+1. 큰 틀을 나눈다.
+2. 틀안에 요소들을 또 나눠본다.
+3. 정렬 혹은 배치가 되는거에 따라 더 작은 틀로 나눌 수 있다. */
+
+/* 2일차 */
+.content{
+    display: flex;
+
+}
+.content__container{
+    width: 60%;
+    padding: 24px 24px 24px 40px;
+}
+.content__video video {
+    width: 100%;
+}
+/**/
+.content__below{
+    margin: 12px 0 24px 0;
+}
+.content__below--title{
+    margin: 0;
+}
+.below--top{
+    display: flex;
+    width: 100%;
+    margin-top: 12px;
+}
+.below--top-user-container{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 42px;
+    gap: 10px;
+}
+.user__inform-profile{
+    display: block;
+    height: 42px;
+    width: 42px;
+    border-radius: 21px;
+}
+.user__inform-profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.user__inform-num{
+    margin: 0;
+    color: #606060;
+    font-size: 12px;
+}
+.user__inform-inform{
+    display:flex;
+    flex-direction: column;
+    width: 120px;
+    height:100%;
+}
+.user__inform-name{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.user__sub-button{
+    background: #000;
+    color: #fff;
+    width: 56px;
+    height: 42px;
+    border: none;
+    border-radius: 28px;
+    cursor:pointer;
+}
+.below--bottom{
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0,0.05);
+    border-radius: 12px;
+    margin: 12px 0;
+    cursor: pointer;
+
+}
+.below--bottom:hover{
+    background: rgba(0,0,0,0.1);
+}
+.description--container{
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.description--main{
+    display: flex;
+    gap: 10px;
+}
+.aside{
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    flex-direction: column;
+    margin-top: 8px;
+    width: 35%;
+    /* margin-left: 0px; */
+    justify-content: flex-end;
+    /* margin: 0 auto; */
+    /* padding: 24px 24px 0px 0px; */
+}
+.aside > hr{
+    color: #606060;
+    width: 90%;
+    margin-left: 0px;
+}
+.box{
+    display: flex;
+    width: 100%;
+}
+.thumnail{
+    float: right;
+    width: 50%;
+}
+img{
+    width: 180px;
+    border-radius: 10px;
+}
+.all{
+    /* display: flex; */
+    /* float: right;*/
+    width: 200px;
+    padding-right: 24px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    display: flexbox;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+} 
+.youtuber, .information{
+    color: #606060;
+    /* font-size: 14px; */
+    font-size: 13px;
+    margin-top: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
