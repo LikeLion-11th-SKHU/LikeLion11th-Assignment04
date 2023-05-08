@@ -234,6 +234,7 @@ body {
 
 .aside__container--part{
     display: flex;
+    margin-bottom: 5px;
 }
 
 .aside__container--part--left img {
@@ -264,6 +265,10 @@ body {
     margin: 0px 0px 4px;
 }
 
-
+.part--right--info {
+    height: 16px;
+    display: flex;
+    align-items: center;
+}
 
 
