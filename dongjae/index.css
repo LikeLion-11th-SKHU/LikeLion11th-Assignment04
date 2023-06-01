@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 56px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__start {
+    display: flex;
+    gap: 10px;
+}
+.header__start--menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__start--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header__center {
+    width: 730px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search-form {
+    width: 550px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid gray;
+    border-right: none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.search-form__display-flex {
+    display: flex;
+    padding: 0 20px;
+    width: 100%;
+    height: 24px;
+}
+
+#search {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 12pt;
+}
+.header__search--button {
+    background-color: #f8f8f8;
+    width: 64px;
+    height: 40px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+.keyboard-voice {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__end {
+    display: flex;
+    align-items: center;
+}
+.header__end--menu {
+    display: flex;
+    width: 142px;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.header__end--user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #065fd4;
+}
+.header__end--user p {
+    width: 48px;
+}
+/*2일차*/
+.content {
+    display: flex;
+}
+.content_container {
+    width: 70%;
+    padding: 24px 24px 24px 24px;
+}
+.content__video video {
+    width: 100%;
+}
+.content__below {
+    margin: 12px 0 24px 0;
+}
+.content__below--title {
+    margin: 0;
+}
+.below--top {
+    display: flex;
+    width: 100%;
+    margin-top: 12px;
+}
+.below--top-user-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 42px;
+    gap: 10px;
+}
+.user__inform-profile {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+}
+.user__inform-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.user__inform-num {
+    margin: 0;
+    color: #606060;
+    font-size: 12px;
+}
+.user__inform-inform {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 100%;
+}
+.user__inform-name {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.user__sub-btn {
+    background-color: #000;
+    color: #fff;
+    width: 56px;
+    height: 42px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.below--bottom {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+.below--bottom:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+.description--container {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.description--main {
+    display: flex;
+    gap: 10px;
+}
+.aside {
+    width: 30%;
+    padding: 24px 24px 24px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.aside--box {
+    display: flex;
+    height: 13%;
+    margin: none;
+    margin-top: 8px;
+}
+.box__img {
+    width: 42%;
+}
+.box__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6%;
+}
+.aside--description{
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+}
+.aside--description a {
+    text-decoration: none;
+    color: black;
+}
+.aside--description h4 {
+    margin: 1px;
+}
+.aside--description h5 {
+    margin: 1px;
+    color: #606060;
+    font-weight: normal;
+}
