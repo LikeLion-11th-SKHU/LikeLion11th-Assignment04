@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 56px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__start {
+    display: flex;
+    gap: 10px;
+}
+
+.header__start--menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__start--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__center {
+    width: 730px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-form {
+    width: 550px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-right: none;
+
+
+
+}
+
+.header__search--button:hover {
+    background-color: darkgray;
+}
+
+.search-form__display-flex {
+    display: flex;
+    padding: 0 20px;
+    width: 100%;
+    height: 24px;
+
+}
+
+#search {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 12pt;
+    
+}
+
+.header__search--button {
+    background-color: #f8f8f8;
+    width: 64px;
+    height: 40px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+
+}
+
+.keyboard-voice {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /*중요*/
+}
+
+.header__end {
+    display: flex;
+    align-items: center;
+}
+
+.header__end--menu {
+    display: flex;
+    /*하나로 정렬할 때 필수*/
+    width: 142px;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__end--user {
+    display: flex;
+    width: 96px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #065fd4;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__end--user p {
+    width: 48px;
+}
+
+/*2일차*/
+
+.content {
+    display: flex;
+    
+}
+
+.content__container {
+    width: 70%;
+    padding: 24px 24px 24px 40px;
+}
+
+/*video는 후손 선택자*/
+.content__video video {
+    width: 100%;
+
+}
+
+.content__below {
+    margin: 12px 0 24px 0;
+}
+
+.content__below--title {
+    margin: 0;
+}
+
+.below--top {
+    display: flex;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.below--top-user-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 42px;
+    gap: 10px;
+}
+
+.user__inform-profile {
+    display: block;
+    
+    width: 42px;
+    height: 42px;
+    border-radius: 21px; /*50%로 해도됨*/
+}
+
+.user__inform-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user__inform-num {
+    margin: 0;
+    color: #606060;
+    font-size: 12px;
+}
+
+.uer__inform-inform {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 100%;
+}
+
+.user__inform-name {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.user__sub-btn {
+    background: #000;
+    color: #fff;
+    width: 56px;
+    height: 42px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.user__sub-btn:hover {
+    background: #606060;
+}
+
+.below--bottom {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.below--bottom:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.description--container {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.description--main {
+    display: flex;
+    gap: 10px;
+}
+
+
+/*여기부터 과제*/
+
+.aside {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.aside--container {
+    display: flex;
+    width: 100%;
+    height: 12%;
+    margin-top: 8px;
+}
+
+.container__img {
+    width: 168px;
+    height: 50px;
+    
+}
+.container__img img {
+    width: 168px;
+    height: 94px;
+    object-fit: cover;
+    border-radius: 6%;
+}
+.aside--description{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    margin-left: 4px;
+    flex-direction: column;
+}
+.title {
+    font-weight: 600;
+    font-size: 13px;
+    color: #0F0F0F;
+    margin: 0;
+    width: 65%;
+    flex-direction: column;
+}
+.uploader {
+    font-size: 12px;
+    color: #606060;
+    margin: 0;
+    font-weight: normal;
+}
+
+.aside--description a {
+    text-decoration: none;
+    color: black;
+}
